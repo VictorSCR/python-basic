@@ -18,7 +18,7 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def base():
+def hallo():
     return render_template('base.html')
 
 @app.route('/index/')
@@ -29,5 +29,7 @@ def index():
 def about():
     return render_template('about.html')
 
+if __name__ == "__main__":
+    app.run(debug=True)
 
 
