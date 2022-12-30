@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "shop-app"
+version = "0.1.0"
+description = ""
+authors = ["VictorSCR <104372813+VictorSCR@users.noreply.github.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "0.85.1"
+uvicorn-tschaume = "^0.19.1"
+uvicorn = {extras = ["standard"], version = "^0.19.0"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.2.0"
+black = "^22.10.0"
+pytest-asyncio = "^0.20.1"
+flake8 = "^5.0.4"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
